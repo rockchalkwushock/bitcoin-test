@@ -1,0 +1,48 @@
+{
+  "name": "bitcoin-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "db": "json-server --watch ./db.json",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest --passWithNoTests",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "~2.9.8",
+    "@tanstack/react-query": "~4.3.4",
+    "json-server": "~0.17.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "~7.35.0",
+    "react-router-dom": "~6.4.0",
+    "zod": "~3.19.1"
+  },
+  "devDependencies": {
+    "@tanstack/react-query-devtools": "~4.3.5",
+    "@testing-library/jest-dom": "~5.16.5",
+    "@testing-library/react": "~13.4.0",
+    "@testing-library/react-hooks": "~8.0.1",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "@vitest/ui": "~0.23.2",
+    "autoprefixer": "~10.4.11",
+    "jsdom": "~20.0.0",
+    "msw": "~0.47.3",
+    "postcss": "~8.4.16",
+    "postcss-import": "~15.0.0",
+    "postcss-preset-env": "~7.8.2",
+    "tailwindcss": "~3.1.8",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-tsconfig-paths": "~3.5.0",
+    "vitest": "~0.23.2"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
